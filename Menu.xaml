@@ -1,0 +1,31 @@
+﻿<Window x:Name="frmMain" x:Class="HRApp.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu" Height="300" Width="300" WindowState="Maximized">    
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Master Data">
+                <MenuItem Header="Employee"></MenuItem>
+                <MenuItem Header="Relation Type"></MenuItem>
+                <MenuItem x:Name="mstrEducation" Header="Education" Click="mstrEducation_Click"></MenuItem>
+                <MenuItem Header="Certification"></MenuItem>
+                <MenuItem Header="Institution" x:Name="mstrInstitution" Click="mstrInstitution_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Process Management">
+                <MenuItem Header="Attendance"></MenuItem>
+                <MenuItem Header="Leaves"></MenuItem>
+                <MenuItem Header="Contract Management"></MenuItem>
+                <MenuItem Header="Medical Claim"></MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="frmMenu" Header="Reports">
+                
+            </MenuItem>
+        </Menu>
+        <Grid>
+            
+        </Grid>
+    </DockPanel>
+</Window>
